@@ -7,8 +7,10 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: "#250505",
+					DEFAULT: "#04386E",
+					dark: "#032140",
 				},
+				highlight: "#FFAC2F",
 			},
 			fontFamily: {
 				sans: ["Nunito", ...fontFamily.sans],
