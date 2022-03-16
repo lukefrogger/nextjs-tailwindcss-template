@@ -12,7 +12,7 @@ class MyDocument extends Document {
 					<link rel="manifest" href="/site.webmanifest" />
 					<meta name="theme-color" content="#450404" />
 				</Head>
-				<body className="text-white duration-300 font-nunito bg-primary">
+				<body className="text-white duration-300 font-nunito bg-brand">
 					<Main />
 					<NextScript />
 				</body>

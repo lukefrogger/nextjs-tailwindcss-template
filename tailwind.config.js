@@ -2,18 +2,17 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
 	content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: false,
 	theme: {
 		extend: {
 			colors: {
-				primary: {
+				brand: {
 					DEFAULT: "#04386E",
-					dark: "#032140",
 				},
 				highlight: "#FFAC2F",
 			},
 			fontFamily: {
-				sans: ["Nunito", ...fontFamily.sans],
+				sans: ["custom_font", ...fontFamily.sans],
 			},
 		},
 	},

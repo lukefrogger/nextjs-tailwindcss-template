@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import splitbee from "@splitbee/web";
 import { DefaultSeo } from "next-seo";
 import { useEffect } from "react";
 import "../styles/globals.css";
@@ -7,10 +6,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
 	useEffect(() => {
-		splitbee.init({
-			apiUrl: "/_hive",
-			scriptUrl: "/bee.js",
-		});
+		// init js plugins here
 	}, []);
 
 	return (
@@ -18,20 +14,20 @@ function MyApp({ Component, pageProps }) {
 			<DefaultSeo
 				openGraph={{
 					type: "website",
-					url: `https://lukefrauhiger.com${router.asPath}`,
-					site_name: "Luke Frauhiger",
+					url: `__url__${router.asPath}`,
+					site_name: "next_template",
 					images: [
 						{
-							url: "https://www.lukefrauhiger.com/seo/luke_frauhiger_og.png",
+							url: "__url__/seo/luke_frauhiger_og.png",
 							width: 1200,
 							height: 630,
-							alt: "Luke Frauhiger banner",
+							alt: "alt name",
 						},
 					],
 				}}
 				twitter={{
-					handle: "@lukefrogger",
-					site: "@lukefrogger",
+					handle: "twitter",
+					site: "siteName",
 					cardType: "summary_large_image",
 				}}
 			/>
